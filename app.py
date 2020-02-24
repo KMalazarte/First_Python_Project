@@ -1,9 +1,9 @@
 from Question import Question
 
 question_prompts = [
-    "What color are apples?/n(a) Red/Green/n(b) Purple/n(c) Orange/n/n",
-    "What color are bananas?/n(a) Teal/n(b) Magenta/n(c) Yellow/n/n",
-    "What color are strawberries?/n(a) Blue/n(b) Red/n(c) White/n/n"
+    "What color are apples?\n(a) Red/Green\n(b) Purple\n(c) Orange\n\n",
+    "What color are bananas?\n(a) Teal\n(b) Magenta\n(c) Yellow\n\n",
+    "What color are strawberries?\n(a) Blue\n(b) Red\n(c) White\n\n"
 ]
 
 questions = [
@@ -19,7 +19,7 @@ def run_test(questions):
         answer = input(question.prompt)
         if answer == question.answer:
             score += 1
-    print("You got" + str(score) + "/" + str(len(questions + "Correct")))
+    print("You got " + str(score) + "/" + str(len(questions)) + " correct")
 
 
 run_test(questions)
